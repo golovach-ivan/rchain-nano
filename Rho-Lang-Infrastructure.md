@@ -40,13 +40,19 @@ java -cp ../../dist/java-cup-11b-runtime.jar:. Main
 ```
   
 ## Code artifacts
-- [rchain/rholang/bnfc](https://github.com/rchain/rchain/tree/master/rholang/src/main/bnfc)
-    - [rholang.cf](https://github.com/rchain/rchain/blob/master/rholang/src/main/bnfc/rholang.cf)
-    - [rholang_mercury.cf](https://github.com/rchain/rchain/blob/master/rholang/src/main/bnfc/rholang_mercury.cf)
+- [rchain/rholang/bnfc](https://github.com/rchain/rchain/tree/master/rholang/src/main/bnfc) - Labelled BNF specs for BNFC tool for generating \*.flex and \*.cup files
+    - [rholang.cf](https://github.com/rchain/rchain/blob/master/rholang/src/main/bnfc/rholang.cf) - ???
+    - [rholang_mercury.cf](https://github.com/rchain/rchain/blob/master/rholang/src/main/bnfc/rholang_mercury.cf) - ???
 - [rchain/rholang/bnfc_old](https://github.com/rchain/rchain/tree/master/rholang/src/main/bnfc_old)
-- [rchain/rholang/k](https://github.com/rchain/rchain/tree/master/rholang/src/main/k)
-- [rchain/rholang/rbl](https://github.com/rchain/rchain/tree/master/rholang/src/main/rbl)
+- [rchain/rholang/k](https://github.com/rchain/rchain/tree/master/rholang/src/main/k) - a some K-Framework specs
+- [rchain/rholang/rbl](https://github.com/rchain/rchain/tree/master/rholang/src/main/rbl) - a lot of Rosette files (\*.rbl)
+    - HelloWorld.rbl
+    - token.rbl - ETH20 Token Contract in Rosette
+    - monad.rbl - The monadic API + impl for Tuple
+    - ...
 - [rchain/rholang/scala](https://github.com/rchain/rchain/tree/master/rholang/src/main/scala)
+    - [rchain/rholang/scala/.../interpreter](rchain/rholang/src/main/scala/coop/rchain/rholang/interpreter/) - ???
+    - [rchain/rholang/scala/.../rosette](https://github.com/rchain/rchain/tree/master/rholang/src/main/scala/rholang/rosette) - ???
   
 ## BNFC
 The BNF Converter (bnfc) is a compiler construction tool (in Haskell) generating a compiler front-end from a Labelled BNF grammar. Given a Labelled BNF (\*.bc file) grammar the tool produces:
