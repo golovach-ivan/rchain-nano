@@ -41,6 +41,8 @@ java -cp ../../dist/java-cup-11b-runtime.jar:. Main
   
 ## Code artifacts
 - [rchain/rholang/bnfc](https://github.com/rchain/rchain/tree/master/rholang/src/main/bnfc)
+    - [rholang.cf](https://github.com/rchain/rchain/blob/master/rholang/src/main/bnfc/rholang.cf)
+    - [rholang_mercury.cf](https://github.com/rchain/rchain/blob/master/rholang/src/main/bnfc/rholang_mercury.cf)
 - [rchain/rholang/bnfc_old](https://github.com/rchain/rchain/tree/master/rholang/src/main/bnfc_old)
 - [rchain/rholang/k](https://github.com/rchain/rchain/tree/master/rholang/src/main/k)
 - [rchain/rholang/rbl](https://github.com/rchain/rchain/tree/master/rholang/src/main/rbl)
@@ -52,9 +54,9 @@ The BNF Converter (bnfc) is a compiler construction tool (in Haskell) generating
 - a CUP parser generator file (\*.cup)
 
 Links
-- [Home page: http://bnfc.digitalgrammars.com](http://bnfc.digitalgrammars.com/)
-- [Source repo: https://github.com/BNFC/bnfc](https://github.com/BNFC/bnfc)
-- [Documentation: http://bnfc.readthedocs.io](http://bnfc.readthedocs.io/en/latest/)
+- Home page: [http://bnfc.digitalgrammars.com](http://bnfc.digitalgrammars.com/)
+- Source repo: [https://github.com/BNFC/bnfc](https://github.com/BNFC/bnfc)
+- Documentation: [http://bnfc.readthedocs.io](http://bnfc.readthedocs.io/en/latest/)
   
 ## JFlex
 
