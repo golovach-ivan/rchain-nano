@@ -1,7 +1,6 @@
 # Rho-Lang Infrastructure
 
 
-
                           +-----+ = lexer/tokenizer/scanner generator
                 *.flex -> |JFlex|
                           +-----+
@@ -40,6 +39,23 @@ javac -cp ../../dist/java-cup-11b-runtime.jar:. *.java
 java -cp ../../dist/java-cup-11b-runtime.jar:. Main
 ```
   
+## Code artifacts
+- [rchain/rholang/bnfc](https://github.com/rchain/rchain/tree/master/rholang/src/main/bnfc)
+- [rchain/rholang/bnfc_old](https://github.com/rchain/rchain/tree/master/rholang/src/main/bnfc_old)
+- [rchain/rholang/k](https://github.com/rchain/rchain/tree/master/rholang/src/main/k)
+- [rchain/rholang/rbl](https://github.com/rchain/rchain/tree/master/rholang/src/main/rbl)
+- [rchain/rholang/scala](https://github.com/rchain/rchain/tree/master/rholang/src/main/scala)
+  
+## BNFC
+The BNF Converter (bnfc) is a compiler construction tool (in Haskell) generating a compiler front-end from a Labelled BNF grammar. Given a Labelled BNF (\*.bc file) grammar the tool produces:
+- an Flex lexer generator file (\*.flex)
+- a CUP parser generator file (\*.cup)
+
+Links
+- [Home page: http://bnfc.digitalgrammars.com](http://bnfc.digitalgrammars.com/)
+- [Source repo: https://github.com/BNFC/bnfc](https://github.com/BNFC/bnfc)
+- [Documentation: http://bnfc.readthedocs.io](http://bnfc.readthedocs.io/en/latest/)
+  
 ## JFlex
 
 ## CUP
@@ -64,6 +80,10 @@ java -cp ../../dist/java-cup-11b-runtime.jar:. Main
 > out of the box and allows easy extensions for other grammar classes.
 
 > Unlike many other traditional parser generators (also including CUP) CUP2 does not create parser source code based on a separate grammar definition language, but uses Java API calls combined with data structures to represent grammar-related information. This means, there is no special language to define grammars and semantic actions, but everything is done in pure Java. Even more, CUP2 disclaims of generating a parser as a source code file, but rather produces a stream of serialised Java code, which can then be loaded by the CUP2 runtime classes.
+
+## Rho-Lang IntelliJ Plugin
+[Rholang IntelliJ plugin](https://github.com/tgrospic/rholang-idea)
+
 
 ## Links
 - [Aho, Sethi and Ullmann's "Compilers: principles, techniques, and tools"](http://books.google.de/books?id=n3eVQgAACAAJ)
