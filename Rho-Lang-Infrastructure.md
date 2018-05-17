@@ -28,6 +28,16 @@
      |CUP|                           || javac.exe ||
      +---+ -> sym.java               +=============+
   
+### Command line point of view
+```shell
+# run CUP
+java -jar ../../dist/java-cup-11b.jar -interface -parser Parser calc.cup
+# compile ???
+javac -cp ../../dist/java-cup-11b-runtime.jar:. *.java
+# run ???
+java -cp ../../dist/java-cup-11b-runtime.jar:. Main
+```
+  
 ## JFlex
 
 ## CUP
